@@ -14,7 +14,7 @@ public class Dictionary {
         this.dict = new HashSet<>();
     }
 
-    //open dictionary and input every word to a hashset
+    //open dictionary of bad words and input every word to a hashset
     private void openDict() {
         try (Scanner scanner = new Scanner(new FileReader(dictionary))) {
 
@@ -28,6 +28,7 @@ public class Dictionary {
         }
     }
 
+    //make Hashset accessible from other class
     public HashSet getDict() {
         openDict();
         return dict;
