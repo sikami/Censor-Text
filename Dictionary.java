@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Dictionary {
     private File dictionary;
-    private HashSet<String> dict;
+    public HashSet<String> dict;
 
     public Dictionary(File dictionary) {
         this.dictionary = dictionary;
